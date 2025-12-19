@@ -8,7 +8,7 @@ from rest_framework.response import Response
 
 ALLOWED_CITIES = ['lahore', 'karachi', 'london', 'tokyo', 'new york']
 
-API_KEY = 'YOUR_API_KEY_HERE'
+API_KEY = '9c51651d232cb6dfd384298bc6f648e1'
 
 class WeatherAPIView(APIView):
 
@@ -31,6 +31,11 @@ class WeatherAPIView(APIView):
 
         response = requests.get(url)
         data = response.json()
+        # print(data) 
+
+
+        # if 'list' not in data:
+        #     return Response({'Error': data.get('message', 'Weather service error')})
 
 
         current_weather = data['list'][0]['weather'][0]['description']

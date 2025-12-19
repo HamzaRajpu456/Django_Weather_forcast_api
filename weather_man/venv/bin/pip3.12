@@ -1,4 +1,4 @@
-#!/home/lenovo/Weather_app/venv/bin/python3
+#!/home/lenovo/Weather_app/weather_man/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
